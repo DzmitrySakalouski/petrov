@@ -7,10 +7,11 @@ export const HomeData = () => {
     const btnStyles = {
         backgroundColor: '#61DAFB',
         color: '#282c34',
-        height: '35px',
         padding: '10px 35px',
         borderRadius: '30px',
-        margin: '25px 0'
+        margin: '25px 0',
+        display: 'flex',
+        justifyContent: 'center'
     }
 
     return (
@@ -21,16 +22,16 @@ export const HomeData = () => {
             <Button title="Связаться со мной    " styles={btnStyles} handleClick={() => console.log()}/>
             <ul className="social-icons">
                 <li className="social-btn">
-                    <i class="fab fa-vk"></i>
+                    <i class="fab fa-vk icon"></i>
                 </li>
                 <li className="social-btn">
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-instagram icon"></i>
                 </li>
                 <li className="social-btn">
-                    <i class="fab fa-odnoklassniki"></i>
+                    <i class="fab fa-odnoklassniki icon"></i>
                 </li>
                 <li className="social-btn">
-                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-youtube icon"></i>
                 </li>
             </ul>
         </div>
