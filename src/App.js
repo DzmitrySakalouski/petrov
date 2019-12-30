@@ -105,6 +105,10 @@ function App() {
               </div>
             </div>
           </div>
+
+          <div className="gallery">
+            
+          </div>
       </main>
     </div>
   );
