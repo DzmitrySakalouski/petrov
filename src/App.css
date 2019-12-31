@@ -249,7 +249,7 @@
   color: #61DAFB;
 }
 
-.gallery {
+.row {
   padding: 50px;
   background-color: #202020;
 
@@ -258,5 +258,9 @@
 
 .margin-bottom-normal {
   margin-bottom: 25px;
+}
+
+.rlc-calendar {
+  color: #61DAFB;
 }
 

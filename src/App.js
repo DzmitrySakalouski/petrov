@@ -18,6 +18,7 @@ import img8 from './assets/img8.jpg'
 import img9 from './assets/img9.jpg'
 import img10 from './assets/img10.jpg'
 
+import { CalendarComponent } from './components/Calendar/calendar';
 
 const slideImages = [
   img1,
@@ -142,7 +143,7 @@ function App() {
           </div>
         </div>
 
-        <div className="gallery">
+        <div className="row">
           <div className="gallery-title margin-bottom-normal">
             <span className="type-large margin-bottom-normal">Галерея</span>
           </div>
@@ -159,6 +160,13 @@ function App() {
                 })
               }
             </Slide>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="margin-bottom-normal">
+            <span className="type-large margin-bottom-normal">Расписание</span>
+            <CalendarComponent />
           </div>
         </div>
       </main>
