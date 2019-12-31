@@ -249,3 +249,14 @@
   color: #61DAFB;
 }
 
+.gallery {
+  padding: 50px;
+  background-color: #202020;
+
+  margin: 25px 0;
+}
+
+.margin-bottom-normal {
+  margin-bottom: 25px;
+}
+
