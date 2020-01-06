@@ -100,25 +100,25 @@ function App() {
           <ul className="offers-list">
             <li className="offers-item">
               <div className="item">
-                <i class="fas fa-glass-martini icon-offers" ></i>
+                <i className="fas fa-glass-martini icon-offers" ></i>
                 <p className="offer-description">Корпоративы</p>
               </div>
             </li>
             <li className="offers-item">
               <div className="item">
-                <i class="fas fa-ring icon-offers"></i>
+                <i className="fas fa-ring icon-offers"></i>
                 <p className="offer-description">Свадьбы</p>
               </div>
             </li>
             <li className="offers-item">
               <div className="item">
-                <i class="fas fa-birthday-cake icon-offers"></i>
+                <i className="fas fa-birthday-cake icon-offers"></i>
                 <p className="offer-description">Дни Рождения</p>
               </div>
             </li>
             <li className="offers-item">
               <div className="item">
-                <i class="fas fa-child icon-offers"></i>
+                <i className="fas fa-child icon-offers"></i>
                 <p className="offer-description">Детские утренники</p>
               </div>
             </li>
@@ -152,7 +152,7 @@ function App() {
               {
                 slideImages.map((image, index) => {
                   return (
-                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div key={index.toString()} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                       <div style={{ 'backgroundImage': `url(${image})`, height: 600, width: '70%', backgroundRepeat: "no-repeat", backgroundSize: 'contain', backgroundPosition: 'center' }}>
                       </div>
                     </div>
@@ -160,6 +160,12 @@ function App() {
                 })
               }
             </Slide>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="margin-bottom-normal">
+            <span className="type-large margin-bottom-normal">Отзывы</span>
           </div>
         </div>
 

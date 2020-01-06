@@ -22,16 +22,16 @@ export const HomeData = () => {
             <Button title="Связаться со мной    " styles={btnStyles} handleClick={() => console.log()}/>
             <ul className="social-icons">
                 <li className="social-btn">
-                    <i class="fab fa-vk icon"></i>
+                    <i className="fab fa-vk icon"></i>
                 </li>
                 <li className="social-btn">
-                    <i class="fab fa-instagram icon"></i>
+                    <i className="fab fa-instagram icon"></i>
                 </li>
                 <li className="social-btn">
-                    <i class="fab fa-odnoklassniki icon"></i>
+                    <i className="fab fa-odnoklassniki icon"></i>
                 </li>
                 <li className="social-btn">
-                    <i class="fab fa-youtube icon"></i>
+                    <i className="fab fa-youtube icon"></i>
                 </li>
             </ul>
         </div>
