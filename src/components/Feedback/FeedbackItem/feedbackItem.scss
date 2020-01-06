@@ -53,6 +53,9 @@
         width: 70%;
         .feedback-username {
             font-size: 35px;
+            text-align: left;
+            position: relative;
+            z-index: 5;
         }
 
         .feedback-text {

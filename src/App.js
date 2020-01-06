@@ -58,6 +58,7 @@ function App() {
           <li className="nav-item">Обо мне</li>
           <li className="nav-item">Услуги</li>
           <li className="nav-item">Галерея</li>
+          <li className="nav-item">Отзывы</li>
           <li className="nav-item">Расписание</li>
         </ul>
       </header>

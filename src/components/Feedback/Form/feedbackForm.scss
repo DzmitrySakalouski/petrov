@@ -1,0 +1,53 @@
+.feedback-form__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-form__container {
+    display: flex;
+    justify-content: space-between;
+
+    .feedback-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+
+        .feedback-form__item {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+
+            .feedback-form__label {
+                text-align: left;
+                color: #61DAFB;
+            }
+
+            .feedback-form__input {
+                height: 25px;
+                margin: 10px 0;
+                border-radius: 5px;
+                outline: none;
+                box-shadow: none;
+                border: none;
+            }
+
+            .feedback-form__textarea {
+                height: 100px;
+            }
+        }
+    }
+
+    .feedback-form__image-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .feedback-form__image {
+        height: 350px;
+        width: 700px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+}
