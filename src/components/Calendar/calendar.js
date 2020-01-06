@@ -3,25 +3,26 @@ import Calendar from 'react-calendar/dist/entry.nostyle';
 import './styles.scss';
 
 export const CalendarComponent = ({ classes }) => {
-    const [date, setDate] = React.useState(new Date());
-    const [dates, setDates] = React.useState([])
-    const onChange = date => setDate(date);
+    const newdays = [new Date()];
 
-//     const onClickDay = date => {
-//     // if day is already clicked, remove it from state
-//     if (dateAlreadyClicked(dates, date)) setDates(datesExcept(dates, date))
-//     else setDates([...dates, date])
-//   }
+    const isDateInArray = date => {
+        const selectedDate = newdays.find(dateItem => {
+            return date.toDateString() === dateItem.toDateString();
+        })
 
-//   const tileClassName = ({ date }) => {
-//     const classNames = [classes.dayTile]
-//     // give active days a special class
-//     if (dateAlreadyClicked(dates, date)) return [classes.activeDay, ...classNames]
-//     return classNames
+        return !!selectedDate;
+    }
+
+    const setSelectedClassName = ({ activeStartDate, date, view }) => {
+        return isDateInArray(date) ? 'selected' : null
+    };
   
     return (
         <div>
-            <Calendar activeStartDate={new Date()} value={[new Date(2019, 11, 1), new Date(2019, 11, 2)]} className="react-calendar-custom " onChange={onChange} />
+            <Calendar 
+                selectRange={true} 
+                tileClassName={setSelectedClassName}
+                className="react-calendar-custom " />
         </div>
     )
 }
