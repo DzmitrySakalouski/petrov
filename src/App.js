@@ -19,6 +19,7 @@ import img9 from './assets/img9.jpg'
 import img10 from './assets/img10.jpg'
 
 import { CalendarComponent } from './components/Calendar/calendar';
+import { FeedbackDerictory } from './components/Feedback/FeedbackDerictory/feedbackDerictory';
 
 const slideImages = [
   img1,
@@ -164,8 +165,9 @@ function App() {
         </div>
 
         <div className="row">
-          <div className="margin-bottom-normal">
+          <div className="margin-bottom-normal row-center">
             <span className="type-large margin-bottom-normal">Отзывы</span>
+            <FeedbackDerictory />
           </div>
         </div>
 
