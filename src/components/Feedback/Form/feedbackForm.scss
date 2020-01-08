@@ -10,13 +10,16 @@
     .feedback-form {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        width: 50%;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 60%;
+        height: 100%;
 
         .feedback-form__item {
             display: flex;
             flex-direction: column;
-            width: 95%;
+            width: 100%;
+            
 
             .feedback-form__label {
                 text-align: left;
@@ -30,6 +33,7 @@
                 outline: none;
                 box-shadow: none;
                 border: none;
+                width: 100%;
             }
 
             .feedback-form__textarea {
@@ -40,7 +44,7 @@
 
     .feedback-form__image-container {
         height: 100%;
-        width: 100%;
+        width: 80%;
     }
 
     .feedback-form__image {

@@ -58,6 +58,12 @@
             }
         }
 
+        
+        .react-calendar__month-view__days > button.react-calendar__tile.react-calendar__month-view__days__day.selected {
+            background-color: #61DAFB;
+            color: #282c34;
+        }
+
         .react-calendar__month-view__days > button.react-calendar__tile.react-calendar__tile--now.react-calendar__month-view__days__day.selected {
             background-color: #61DAFB;
             color: #282c34;
