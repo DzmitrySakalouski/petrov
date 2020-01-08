@@ -7,10 +7,8 @@ export const CalendarComponent = ({ classes }) => {
 
     const isDateInArray = date => {
         const selectedDate = newdays.find(dateItem => {
-            // console.log(date.toDateString() === dateItem.toDateString())
             return date.toDateString() === dateItem.toDateString();
         })
-        // !!selectedDate && console.log("selectedDate =>", selectedDate, !!selectedDate);
         return !!selectedDate;
     }
 
